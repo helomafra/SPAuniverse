@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap");
+
+/* AJUSTE: DEIXAR O NAV ATIVO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #e1e1e6;
+  --secondary-color: #8d8d99;
+  --hover: #ffffff;
+  --button-hover: #02799d;
+
+  font-size: 62.5%;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  position: absolute;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  gap: 3.2rem;
+  padding-block: 4rem;
+  margin-left: 7.2rem;
+
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: var(--secondary-color);
+}
+
+nav a:hover {
+  color: var(--hover);
+  font-weight: 700;
+}
+
+.active {
+  font-weight: bold;
+  color: var(--hover);
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 1px;
+
+  margin-bottom: 2.4rem;
+
+  color: var(--primary-color);
+}
+
+.home button {
+  background: none;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--primary-color);
+
+  padding: 1.2rem 3.2rem;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.home button:hover {
+  background: var(--hover);
+  color: var(--button-hover);
+}
+
+.universe,
+.exploration {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+
+  gap: 1.6rem;
+  margin-left: 10.2rem;
+}
+
+.universe h1,
+.exploration h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  letter-spacing: 1px;
+
+  color: var(--primary-color);
+}
+
+.universe p,
+.exploration p {
+  max-width: 68.4rem;
+
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--primary-color);
+}
